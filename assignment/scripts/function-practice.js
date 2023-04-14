@@ -116,18 +116,18 @@ console.log(sumAll([1,2,3,4,9,-3.5]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-function returnEvens (array){
+function returnValues(array){
   let newArray = [];
   for (value of array){
-    if (value % 2 === 0){
-     newArray.push(value)
-  } else {
-      value % 2 === 1; 
-    }
+    if (value >= 0){
+     newArray.push(value);
+   } 
+   else {
+    return newArray = [];
+   }
   }
 }
-console.log(returnEvens([2,3,4,5,6,12]));
-
+console.log(returnValues([2,3,4,5,6,12]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
