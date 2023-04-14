@@ -119,15 +119,15 @@ console.log(sumAll([1,2,3,4,9,-3.5]));
 function returnValues(array){
   let newArray = [];
   for (value of array){
-    if (value >= 0){
+    if (value > 0){
      newArray.push(value);
    } 
-   else {
-    return newArray = [];
-   }
   }
+  return newArray;
 }
-console.log(returnValues([2,3,4,5,6,12]));
+console.log(returnValues([-1, -2]));
+console.log(returnValues([3,5,3,1,-1,5]));
+
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
