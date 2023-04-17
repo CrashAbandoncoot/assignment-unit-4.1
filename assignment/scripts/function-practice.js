@@ -70,6 +70,7 @@ function getLast(array) {
     return array[array.length-1];
 }
 console.log(getLast([1, 2, 4, 100, 90, 67]));
+console.log(getLast([]))
 
 
 
